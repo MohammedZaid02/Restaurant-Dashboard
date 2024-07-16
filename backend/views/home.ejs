@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body> 
+    
+
+    <h1>Dishes</h1>
+    <hr>
+    <br>
+    <div>
+        <% if (locals.dishes) { %>
+         <table>
+            <thead>
+                <th>dishId</th>
+                <th>dishName</th>
+                <th>imageUrl</th>
+                <th>isPublished </th>
+            </thead>
+            <tbody>
+                <% dishes.forEach((dish,index) => { %>
+                    <tr>
+                        <td><%=dish.dishId  %></td>
+                        <td><%=dish.dishName  %></td>
+                        <td><%=dish.imageUrl  %></td>
+                        <td><%=dish.isPublished  %></td>
+                    </tr>
+                 
+                <% }) %>
+            </tbody>
+         </table>
+        <% } %>
+    </div>
+</body>
+</html>

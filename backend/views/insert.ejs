@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form {
+            display: grid;
+            grid-template-columns: auto auto; 
+            max-width: 300px; 
+        }
+
+        label {
+            grid-column: 1 / 2; 
+            align-self: center;
+        }
+
+        input {
+            grid-column: 2 / 3;
+        }
+        button {
+            grid-column: -2 / 2; 
+            justify-self: center; 
+            
+            margin-top: 10px;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Restaurant Menu Insert</h1>
+
+    <form action="/insert" method="post">
+        <label for="dishId">Dish Id</label>
+        <input type="text" required name="dishId">
+        <br>
+    
+        <label for="dishName">Dish Name</label>
+        <input type="text" required name="dishName">
+        <br>
+    
+        <label for="imageUrl">Image URL</label>
+        <input type="text" required name="imageUrl">
+        <br>
+    
+        <label for="isPublished">Is Published</label>
+        <input type="checkbox" name="isPublished">
+        <br>
+    
+        <button type="submit">Insert</button>
+    </form>
+    
+</body>
+</html>

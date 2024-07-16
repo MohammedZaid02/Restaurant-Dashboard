@@ -1,0 +1,190 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; 
+  background-image: url('restaurant2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Form Styles */
+form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+form input[type="text"], form input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: -4px;
+  padding: 0px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+  justify-items: flex-end;
+}
+
+.dish-info {
+  display: flex;
+  align-items: center;
+}
+
+.dish-info .dish-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.dish-info .dish-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+li button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.published {
+  background-color: #28a745;
+  color: white;
+}
+
+.unpublished {
+  background-color: #dc3545;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%; 
+    padding: 15px;
+    font-size: 10px;
+        padding: 0rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  form input[type="text"], form input[type="checkbox"], form button {
+    font-size: 14px;
+  }
+
+  .dish-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dish-info .dish-image {
+    margin-bottom: 10px;
+  }
+}
+
+.navbar {
+  width: 29vw;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    height: 3vw;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;    
+} 
+
+
+.navbar-brand {
+  font-weight: bold; 
+  font-size: 1.5rem; 
+}
+
+
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+}
+
+.nav-link {
+  color: #333; 
+  font-size: 1.2rem; 
+  margin: 0 1rem; 
+}
+
+.nav-link:hover {
+  text-decoration: underline; 
+}
+
+
+.nav-item {
+  margin: 7px;
+  margin-bottom: -4px;
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
